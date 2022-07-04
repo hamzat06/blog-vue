@@ -1,0 +1,58 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  position: relative;
+  font-weight: normal;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.6;
+  font-family: $font-playfair !important;
+  font-size: 15px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.font {
+  &-bold {
+    font-weight: bold;
+  }
+}
+
+.link {
+  color: #1473E6;
+}
+
+.post-footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+
+  a {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    font-weight: 700;
+  }
+}
+
+.posts-grid {
+  @include container;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 3rem;
+  @include break(large) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  @include break(small) {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}

@@ -1,0 +1,18 @@
+@mixin break($breakpoint) {
+  @if $breakpoint == large {
+    @media (max-width: 1024px) { @content };
+  }
+  @if $breakpoint == medium {
+    @media (max-width: 786px) { @content };
+  }
+  @if $breakpoint == small {
+    @media (max-width: 600px) { @content };
+  }
+}
+
+@mixin container {
+  max-width: 1150px;
+  margin: 0 auto;
+  position: relative;
+  box-sizing: border-box;
+}

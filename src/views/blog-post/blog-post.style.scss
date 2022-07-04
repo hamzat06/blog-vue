@@ -1,0 +1,40 @@
+@import "../../assets/scss";
+.individual {
+  @include container;
+  padding: 10px;
+  margin-top: 4rem;
+  column-gap: 10px;
+  width: 60%;
+  overflow: hidden;
+  @include break(medium) {
+    width: 100%;
+  }
+
+  &__date {
+    font-size: 12px;
+  }
+
+  &__title {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+
+    @include break(small) {
+      font-size: 28px;
+    }
+  }
+}
+
+.more__article {
+  @include container;
+  margin-top: 5rem;
+  &--title {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 900;
+  }
+
+  .posts-grid {
+    padding-top: 2rem;
+  }
+}

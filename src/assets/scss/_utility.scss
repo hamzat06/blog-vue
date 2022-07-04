@@ -1,0 +1,37 @@
+@import './variables';
+
+html {
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: ProRegular;
+        font-style: normal;
+        margin: 0;
+        padding: 0 10%;
+        @media only screen and (max-width:700px){
+            padding: 0 20px;
+        }
+    }
+
+    h5{
+        font-size: 18px;
+        line-height: 21px;
+        color: $black01;
+    }
+
+    p{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 21px;
+        color: $black20;
+        margin: 0;
+    }
+    small{
+        font-family: ProText;
+        font: size 12px;
+        line-height:14px;
+    }
+}

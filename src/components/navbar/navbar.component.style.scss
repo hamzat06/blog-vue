@@ -1,0 +1,29 @@
+@import "../../assets/scss/mixin";
+
+.navbar {
+  &__container {
+    @include container;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__image {
+      flex-basis: 88%;
+    }
+    &__socials {
+      display: flex;
+      align-items: center;
+      flex-grow: 1;
+      justify-content: space-between;
+      span {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 14px;
+        display: flex;
+        color: #6e6e6e;
+      }
+    }
+  }
+}
